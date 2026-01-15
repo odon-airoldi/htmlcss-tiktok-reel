@@ -105,12 +105,33 @@ footer {
 		align-items: center;
 		list-style: none;
 		padding: 16px 0;
+		color: #9b9b9b;
 
 		li {
 			flex-grow: 1;
 			flex-basis: 0;
 			text-align: center;
 			font-size: 24px;
+		}
+
+		li.current {
+			color: #fff
+		}
+
+		li.message {
+			position: relative;
+			.message-counter {
+				content: '';
+				display: block;
+				padding: 1px 6px;
+				background-color: #e54555;
+				color: #fff;
+				border-radius: 8px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+			}
+			
 		}
 	
 		span {
